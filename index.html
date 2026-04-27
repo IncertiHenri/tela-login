@@ -9,30 +9,38 @@
 </head>
 
 <header>
-    <nav>
-        <h1>Formulário de Login</h1>
-    </nav>
+    <nav class="navbar bg-body-tertiary bg-warning-subtle">
+  <div class="container-fluid d-flex justify-content-center">
+    <h1 class="text-warning">Formulário de Login</h1>
+</div>
+</nav>
 </header>
 
 <body>
 
 
-    <form id="formLogin">
+    <form id="formLogin" class="d-flex justify-content-center">
         <div class="w-25 p-3">
+            
+            <div class="p-3 mb-2 bg-warning-subtle text-warning-emphasis border border-warning-subtle rounded border-3">
+            
             <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <input type="email" class="form-control border border-warning-subtle rounded border-2" id="email" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">O seu E-mail não será compartilhado!</div>
             </div>
+           
+
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control border border-warning-subtle rounded border-2" id="senha">
+            </div>
+
+            <p class="form-text">Esqueci minha senha</p>
+
+            <button type="submit" class="btn btn-light border border-warning-subtle border-2">Login</button>
         </div>
-        <div class="w-25 p-3">
-        <div class="mb-3">
-            <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha">
-        </div>
-</div>
-    <div class="w-25 p-3">
-        <button type="submit" class="btn btn-outline-warning">Login</button>
+      
         </div>
     </form>
 
